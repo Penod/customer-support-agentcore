@@ -63,10 +63,10 @@ os.environ["BYPASS_TOOL_CONSENT"] = "true"
 # REGION:     your AWS region, e.g. "us-east-1"
 # MEMORY_ID   format: shown in the AgentCore Memory console
 
-GATEWAY_URL = os.environ.get("GATEWAY_URL", "https://customersupportgateway-5jqn8vtvo5.gateway.bedrock-agentcore.us-east-1.amazonaws.com/mcp")
-KB_ID       = os.environ.get("KB_ID", "6F3KSMNWOI")
+GATEWAY_URL = os.environ.get("GATEWAY_URL", "https://customersupportgateway-tnbfxaon1d.gateway.bedrock-agentcore.us-east-1.amazonaws.com/mcp")
+KB_ID       = os.environ.get("KB_ID", "ZCR2E2OFXJ")
 REGION      = os.environ.get("REGION", "us-east-1")
-MEMORY_ID   = os.environ.get("MEMORY_ID", "CustomerSupportMemory-tGQICv3D3G")
+MEMORY_ID   = os.environ.get("MEMORY_ID", "CustomerSupportMemory-ATT5nyArWg")
 
 
 def _is_configured(value: str) -> bool:
@@ -313,7 +313,7 @@ result = {{
     "order_total": order_total,
     "points_redeemed": points_redeemed,
     "points_discount": points_discount,
-    "tier_discount_rate": tier_discount_rate,
+    "tier_discount_pct": tier_discount_rate,
     "tier_discount": tier_discount,
     "final_total": final_total,
     "total_savings": total_savings,
